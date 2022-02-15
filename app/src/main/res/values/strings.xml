@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MenuApplication</string>
+    <string name="pesan1">Pesan satu</string>
+    <string name="pesan2">Pesan dua</string>
+</resources>

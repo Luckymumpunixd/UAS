@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/llBanner"
+        layout="@layout/layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/header" />
+
+    <include
+        layout="@layout/layout_kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llBanner"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff0000"
+        android:orientation="horizontal"
+        android:id="@+id/header">
+        <ImageButton
+            android:id="@+id/btn_detail"
+            android:onClick="detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/transparan"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_dehaze_24" />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparan"
+            android:padding="5dp"
+            android:text="Hymart"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/btn_keluar"
+            android:onClick="keluar"
+            android:layout_alignParentEnd="true"
+            android:background="@color/transparan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_exit_to_app_24" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
